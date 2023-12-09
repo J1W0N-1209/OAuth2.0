@@ -1,7 +1,7 @@
 package com.project.oauth2.domain.user;
 
 import com.project.oauth2.domain.BaseTimeEntity;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

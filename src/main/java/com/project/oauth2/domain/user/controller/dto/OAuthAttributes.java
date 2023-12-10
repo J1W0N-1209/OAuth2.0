@@ -1,12 +1,11 @@
-package com.project.oauth2.config.oauth.dto;
+package com.project.oauth2.domain.user.controller.dto;
 
-import com.project.oauth2.domain.user.Role;
-import com.project.oauth2.domain.user.User;
+import com.project.oauth2.domain.user.entity.Role;
+import com.project.oauth2.domain.user.entity.User;
 import lombok.Builder;
 import lombok.Getter;
 
 import java.util.Map;
-import java.util.Objects;
 
 @Getter
 public class OAuthAttributes {
@@ -36,6 +35,7 @@ public class OAuthAttributes {
                 .name((String) attributes.get("name"))
                 .email((String) attributes.get("email"))
                 .picture((String) attributes.get("picture"))
+                .attributes(attributes)
                 .nameAttributeKey(userNameAttributeName)
                 .build();
     }

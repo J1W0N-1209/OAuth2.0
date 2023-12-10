@@ -1,7 +1,8 @@
-package com.project.oauth2.domain.user;
+package com.project.oauth2.domain.user.entity;
 
 import com.project.oauth2.domain.BaseTimeEntity;
 import javax.persistence.*;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

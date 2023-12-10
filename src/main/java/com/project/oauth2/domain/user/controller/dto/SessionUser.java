@@ -1,6 +1,6 @@
-package com.project.oauth2.config.oauth.dto;
+package com.project.oauth2.domain.user.controller.dto;
 
-import com.project.oauth2.domain.user.User;
+import com.project.oauth2.domain.user.entity.User;
 import lombok.Getter;
 
 import java.io.Serializable;

@@ -1,6 +1,7 @@
 package com.project.oauth2.config.oauth;
 
-import com.project.oauth2.domain.user.Role;
+import com.project.oauth2.domain.user.entity.Role;
+import com.project.oauth2.domain.user.service.CustomOAuth2UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;

@@ -1,11 +1,11 @@
-package com.project.oauth2.config.oauth;
+package com.project.oauth2.domain.user.service;
 
-import com.project.oauth2.config.oauth.dto.OAuthAttributes;
-import com.project.oauth2.config.oauth.dto.SessionUser;
-import com.project.oauth2.domain.user.User;
-import com.project.oauth2.domain.user.UserRepository;
+import com.project.oauth2.domain.user.controller.dto.OAuthAttributes;
+import com.project.oauth2.domain.user.controller.dto.SessionUser;
+import com.project.oauth2.domain.user.entity.User;
+import com.project.oauth2.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.apache.catalina.manager.util.SessionUtils;
+import org.slf4j.Logger;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
